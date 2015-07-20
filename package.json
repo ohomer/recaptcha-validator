@@ -1,6 +1,6 @@
 {
   "name": "recaptcha-validator",
-  "version": "0.0.22",
+  "version": "1.0.0",
   "description": "A simple and correct google recaptcha library to validate recaptcha's",
   "main": "index.js",
   "scripts": {
