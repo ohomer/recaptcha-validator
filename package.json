@@ -1,0 +1,18 @@
+{
+  "name": "recaptcha-validator",
+  "version": "0.0.22",
+  "description": "A simple and correct google recaptcha library to validate recaptcha's",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/ohomer/recaptcha-validator"
+  },  
+  "author": "Ohomer",
+  "license": "MIT",
+  "dependencies": {
+    "debug": "^2.2.0"
+  }
+}
