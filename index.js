@@ -35,7 +35,13 @@ exports.promise = function(secret, response, remoteIp) {
       res.on('end', function() {
         debug('Raw Response: ', body);
 
-        var json = JSON.parse(body);
+        var json;
+        try {
+          json = JSON.parse(body);
+        } catch (ex) {
+          console.warn('Caught exception when parsing response: ', body);
+          return reject('unspecified-error');
+        }
 
         if (json.success)
           return resolve();
